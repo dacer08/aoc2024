@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 
-namespace AdventOfCode;
+namespace AdventOfCode.aOLD;
 
 public class D06
 {

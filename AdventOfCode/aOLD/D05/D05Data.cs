@@ -1,4 +1,4 @@
-﻿namespace AdventOfCode;
+﻿namespace AdventOfCode.aOLD.D05;
 
 public static class D05Data
 {

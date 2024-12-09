@@ -1,9 +1,9 @@
-﻿namespace AdventOfCode;
+﻿namespace AdventOfCode.aOLD.D05;
 
 public class D05
 {
     public List<int> Print = [];
-  
+
     public void Run()
     {
         for (var i = 0; i < D05Data.Map.Count; i++)

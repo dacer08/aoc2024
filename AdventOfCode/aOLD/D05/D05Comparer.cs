@@ -1,4 +1,4 @@
-﻿namespace AdventOfCode;
+﻿namespace AdventOfCode.aOLD.D05;
 public class D05Comparer : IComparer<int>
 {
     public int Compare(int p1, int p2)
