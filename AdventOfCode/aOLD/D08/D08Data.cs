@@ -23,8 +23,6 @@ public static class D08Data
 
     public static void Display(List<List<char>> map)
     {
-        //Thread.Sleep(50);
-        //Console.Clear();
         Console.SetCursorPosition(0, 0);
         for (var y = 0; y < map.Count; y++)
         {

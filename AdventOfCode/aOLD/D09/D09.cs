@@ -1,4 +1,6 @@
-﻿namespace AdventOfCode;
+﻿using AdventOfCode.aOLD.D09;
+
+namespace AdventOfCode;
 
 public class D09
 {
