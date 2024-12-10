@@ -1,6 +1,6 @@
 ﻿using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace AdventOfCode;
+namespace AdventOfCode.D10;
 
 public class D10
 {
@@ -10,7 +10,7 @@ public class D10
         y = y + vy;
         scale = scale + 1;
 
-        var map = D10Data.Map;
+        var map = DataD10.Map;
         if (x < 0 || y < 0 || y >= map.Count || x >= map[0].Count)
         {
             return;
@@ -36,7 +36,7 @@ public class D10
 
     public void Run_P1()
     {
-        var map = D10Data.Map;
+        var map = DataD10.Map;
         var count = 0;
         for (var y = 0; y < map.Count; y++)
         {
@@ -77,7 +77,7 @@ public class D10
         y = y + vy;
         scale = scale + 1;
 
-        var map = D10Data.Map;
+        var map = DataD10.Map;
         if (x < 0 || y < 0 || y >= map.Count || x >= map[0].Count)
         {
             return;
@@ -103,7 +103,7 @@ public class D10
 
     public void Run()
     {
-        var map = D10Data.Map;
+        var map = DataD10.Map;
         for (var y = 0; y < map.Count; y++)
         {
             var line = map[y];

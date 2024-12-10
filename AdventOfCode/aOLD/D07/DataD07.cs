@@ -1,8 +1,8 @@
 ﻿using System.Numerics;
 
-namespace AdventOfCode.aOLD.D07;
+namespace AdventOfCode.D07;
 
-public static class D07Data
+public static class DataD07
 {
     //private const string INPUT = "D07/InputTest.txt";
     private const string INPUT = "D07/Input.txt";

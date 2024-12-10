@@ -1,6 +1,6 @@
 ﻿using System.Numerics;
 
-namespace AdventOfCode.aOLD.D07;
+namespace AdventOfCode.D07;
 
 public class D07
 {
@@ -76,9 +76,9 @@ public class D07
     public void Run()
     {
 
-        for (var i = 0; i < D07Data.Results.Count; i++)
+        for (var i = 0; i < DataD07.Results.Count; i++)
         {
-            Explore(D07Data.Results[i], D07Data.Numbers[i]);
+            Explore(DataD07.Results[i], DataD07.Numbers[i]);
         }
         Console.WriteLine(Count);
     }

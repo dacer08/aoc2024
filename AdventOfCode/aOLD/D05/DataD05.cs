@@ -1,6 +1,6 @@
-﻿namespace AdventOfCode.aOLD.D05;
+﻿namespace AdventOfCode.D05;
 
-public static class D05Data
+public static class DataD05
 {
     private const string INPUT = "D05/InputTest.txt";
 

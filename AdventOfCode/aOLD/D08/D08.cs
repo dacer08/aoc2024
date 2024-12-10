@@ -1,8 +1,4 @@
-﻿using AdventOfCode.aOLD.D07;
-using System.Numerics;
-using System.Xml.Linq;
-
-namespace AdventOfCode.aOLD.D08;
+﻿namespace AdventOfCode.D08;
 
 public class D08
 {
@@ -10,7 +6,7 @@ public class D08
 
     public void Run()
     {
-        var map = D08Data.Map;
+        var map = DataD08.Map;
         var newMap = new List<List<char>>();
         var chars = map
             .SelectMany(m => m.Where(c => c != '.').ToList())
@@ -72,7 +68,7 @@ public class D08
                         ix -= x;
                     }
 
-                    D08Data.Display(newMap);
+                    DataD08.Display(newMap);
                 }
 
             }

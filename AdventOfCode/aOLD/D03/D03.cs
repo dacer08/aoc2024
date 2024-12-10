@@ -1,6 +1,6 @@
 ﻿using System.Text.RegularExpressions;
 
-namespace AdventOfCode;
+namespace AdventOfCode.D03;
 
 public class D03
 {

@@ -1,4 +1,4 @@
-﻿namespace AdventOfCode.aOLD.D05;
+﻿namespace AdventOfCode.D05;
 
 public class D05
 {
@@ -6,9 +6,9 @@ public class D05
 
     public void Run()
     {
-        for (var i = 0; i < D05Data.Map.Count; i++)
+        for (var i = 0; i < DataD05.Map.Count; i++)
         {
-            D05Data.Map[i].Sort(new D05Comparer());
+            DataD05.Map[i].Sort(new D05Comparer());
 
 
             //var line = Data.Map[i];
@@ -34,7 +34,7 @@ public class D05
             //{
             //    Print.Add(line[line.Count / 2]);
             //}
-            Console.WriteLine(string.Join(',', D05Data.Map[i]));
+            Console.WriteLine(string.Join(',', DataD05.Map[i]));
         }
 
     }

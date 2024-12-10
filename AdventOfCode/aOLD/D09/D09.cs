@@ -1,6 +1,6 @@
-﻿using AdventOfCode.aOLD.D09;
+﻿using AdventOfCode.aOLD.D10;
 
-namespace AdventOfCode;
+namespace AdventOfCode.D09;
 
 public class D09
 {
@@ -13,13 +13,14 @@ public class D09
 
         var maxSpace = 0;
 
-        for (i = 0; i < D09Data.Map.Count; i++) { 
-            files.Add(new Dfile(idRight, D09Data.Map[i], i));
+        for (i = 0; i < DataD09.Map.Count; i++)
+        {
+            files.Add(new Dfile(idRight, DataD09.Map[i], i));
             idRight++;
             i++;
-            if (i < D09Data.Map.Count)
+            if (i < DataD09.Map.Count)
             {
-                maxSpace += D09Data.Map[i];
+                maxSpace += DataD09.Map[i];
             }
         }
 
@@ -33,7 +34,7 @@ public class D09
 
         i = 0;
 
-        while (i < D09Data.Map.Count && idLeft <= idRight)
+        while (i < DataD09.Map.Count && idLeft <= idRight)
         {
             var current = files[idLeft];
             var size = current.Size;
@@ -45,12 +46,12 @@ public class D09
             idLeft++;
             i++;
 
-            if (i >= D09Data.Map.Count)
+            if (i >= DataD09.Map.Count)
             {
                 break;
             }
 
-            empty = D09Data.Map[i];
+            empty = DataD09.Map[i];
 
             while (empty > 0 && idLeft <= idRight)
             {
@@ -71,7 +72,7 @@ public class D09
             //D09Data.Display(space);
         }
 
-        while (empty > 0 ||fill > 0)
+        while (empty > 0 || fill > 0)
         {
             if (fill == 0)
             {
@@ -130,16 +131,16 @@ public class D09
         var j = 0;
         var position = 0;
 
-        for (i = 0; i < D09Data.Map.Count; i++)
+        for (i = 0; i < DataD09.Map.Count; i++)
         {
-            var file = new Dfile(idRight, D09Data.Map[i], position);
+            var file = new Dfile(idRight, DataD09.Map[i], position);
             files.Add(file);
             position += file.Size;
             idRight++;
             i++;
-            if (i < D09Data.Map.Count)
+            if (i < DataD09.Map.Count)
             {
-                file = new Dfile(idRight, D09Data.Map[i], position);
+                file = new Dfile(idRight, DataD09.Map[i], position);
                 emptySpaces.Add(file);
                 position += file.Size;
             }
@@ -196,7 +197,8 @@ public class D09
         {
             while (j < emptySpaces.Count && emptySpaces[j].Position < space[i].Position)
             {
-                for (var x = 0; x < emptySpaces[j].Size; x++) { 
+                for (var x = 0; x < emptySpaces[j].Size; x++)
+                {
                     result.Add(0);
                 }
                 j++;

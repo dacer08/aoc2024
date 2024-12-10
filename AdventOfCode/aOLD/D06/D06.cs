@@ -1,6 +1,6 @@
 ﻿using System.Collections;
 
-namespace AdventOfCode;
+namespace AdventOfCode.D06;
 
 public class D06
 {
@@ -80,7 +80,7 @@ public class D06
 
     public List<List<char>> Duplicate()
     {
-        var map = D06Data.Map;
+        var map = DataD06.Map;
         var newMap = new List<List<char>>();
         for (var y = 0; y < map.Count; y++)
         {
@@ -100,7 +100,7 @@ public class D06
         var guardFound = false;
         var y = 0;
         var x = 0;
-        var map = D06Data.Map;
+        var map = DataD06.Map;
         while (y < map.Count && !guardFound)
         {
             var line = map[y];
