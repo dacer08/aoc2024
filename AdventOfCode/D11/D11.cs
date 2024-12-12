@@ -1,9 +1,4 @@
-﻿using System.Collections.Concurrent;
-using System.Collections.Generic;
-using System.Collections.Specialized;
-using System.Xml.Linq;
-
-namespace AdventOfCode;
+﻿namespace AdventOfCode;
 
 public class D11
 {
@@ -30,23 +25,24 @@ public class D11
         return 19;
     }
 
-    public Dictionary<long, long> Dic = new Dictionary<long, long>();
+    public Dictionary<long, Dictionary<long, long>> Dic = new Dictionary<long, Dictionary<long, long>>();
 
-    public int MAX = 25;
+    public int MAX = 75;
 
     public long Explore(long number, long count)
     {
         if (count == 0) return 1;
 
-        if (Dic.ContainsKey(number))
+        if (Dic.ContainsKey(number) && Dic[number].ContainsKey(count))
         {
-            return Dic[number];
+            return Dic[number][count];
         }
 
         long res = 0;
+        long newNumber = 0;
         if (number == 0)
         {
-            number = 1;
+            newNumber = 1;
         }
         else
         {
@@ -54,27 +50,27 @@ public class D11
             if (nbDigit % 2 == 0)
             {
                 long x = (long)Math.Pow(10, (nbDigit / 2));
-                long left = number / x;
+                newNumber = number / x;
                 long right = number % x;
-
-                number = left;
 
                 res += Explore(right, count - 1);
             }
             else
             {
-                number = number * 2024;
+                newNumber = number * 2024;
             }
         }
 
-        res = Explore(number, count - 1) + res;
+        res = Explore(newNumber, count - 1) + res;
 
-        if (count == MAX)
+        if (!Dic.ContainsKey(number))
         {
-            if (!Dic.ContainsKey(number))
-            {
-                Dic[number] = res;
-            }
+            Dic[number] = new Dictionary<long, long>();
+        }
+
+        if (!Dic[number].ContainsKey(count))
+        {
+            Dic[number][count] = res;
         }
 
         return res;
@@ -188,7 +184,7 @@ public class D11
         }
 
         var count = max;
-        
+       
         while (count > 0)
         {
             var node = list.First;
@@ -236,7 +232,7 @@ public class D11
             DataD11.DisplayCount(count, 0);
         }
 
-        
+       
 
         //DataD11.DisplayCount(count, p);
         //Console.WriteLine("added" + result.Count);
