@@ -1,4 +1,4 @@
-﻿namespace AdventOfCode;
+﻿namespace AdventOfCode.aOLD.D11;
 
 public static class DataD11
 {
@@ -39,7 +39,7 @@ public static class DataD11
         lock (x)
         {
 
-            Console.SetCursorPosition((pos * 4), 0);
+            Console.SetCursorPosition(pos * 4, 0);
 
             Console.Write(count);
         }

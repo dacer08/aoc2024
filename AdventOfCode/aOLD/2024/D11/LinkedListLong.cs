@@ -1,6 +1,6 @@
 ﻿using static System.Net.Mime.MediaTypeNames;
 
-namespace AdventOfCode;
+namespace AdventOfCode.aOLD.D11;
 
 public class Node
 {

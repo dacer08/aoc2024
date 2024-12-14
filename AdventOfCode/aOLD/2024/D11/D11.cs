@@ -1,4 +1,4 @@
-﻿namespace AdventOfCode;
+﻿namespace AdventOfCode.aOLD.D11;
 
 public class D11
 {
@@ -49,7 +49,7 @@ public class D11
             var nbDigit = NbDigits(number);
             if (nbDigit % 2 == 0)
             {
-                long x = (long)Math.Pow(10, (nbDigit / 2));
+                long x = (long)Math.Pow(10, nbDigit / 2);
                 newNumber = number / x;
                 long right = number % x;
 

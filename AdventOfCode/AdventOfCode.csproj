@@ -8,70 +8,94 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <None Update="aOLD\D10\Input.txt">
+    <None Update="aOLD\2023\D05\Input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="aOLD\D10\InputTest.txt">
+    <None Update="aOLD\2023\D05\InputTest.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="aOLD\D09\Input.txt">
+    <None Update="aOLD\2024\D10\Input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="aOLD\D09\InputTest.txt">
+    <None Update="aOLD\2024\D10\InputTest.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="aOLD\D08\Input.txt">
+    <None Update="aOLD\2024\D09\Input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="aOLD\D08\InputTest.txt">
+    <None Update="aOLD\2024\D09\InputTest.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="aOLD\D07\Input.txt">
+    <None Update="aOLD\2024\D08\Input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="aOLD\D07\InputTest.txt">
+    <None Update="aOLD\2024\D08\InputTest.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="aOLD\D06\Input.txt">
+    <None Update="aOLD\2024\D07\Input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="aOLD\D06\InputTest.txt">
+    <None Update="aOLD\2024\D07\InputTest.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="aOLD\D05\Input.txt">
+    <None Update="aOLD\2024\D06\Input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="aOLD\D05\InputTest.txt">
+    <None Update="aOLD\2024\D06\InputTest.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="aOLD\D04\Input.txt">
+    <None Update="aOLD\2024\D05\Input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="aOLD\D04\InputTest.txt">
+    <None Update="aOLD\2024\D05\InputTest.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="aOLD\D03\Input.txt">
+    <None Update="aOLD\2024\D04\Input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="aOLD\D03\InputTest.txt">
+    <None Update="aOLD\2024\D04\InputTest.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="aOLD\D02\Input.txt">
+    <None Update="aOLD\2024\D03\Input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="aOLD\D02\InputTest.txt">
+    <None Update="aOLD\2024\D03\InputTest.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="aOLD\D01\Input.txt">
+    <None Update="aOLD\2024\D02\Input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="aOLD\D01\InputTest.txt">
+    <None Update="aOLD\2024\D02\InputTest.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="D11\Input.txt">
+    <None Update="aOLD\2024\D01\Input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="D11\InputTest.txt">
+    <None Update="aOLD\2024\D01\InputTest.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="D14\Input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="D14\InputTest.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="aOLD\2024\D13\Input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="aOLD\2024\D13\InputTest.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="aOLD\2024\D12\Input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="aOLD\2024\D12\InputTest.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="aOLD\2024\D11\Input.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="aOLD\2024\D11\InputTest.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
