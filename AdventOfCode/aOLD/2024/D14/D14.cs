@@ -1,6 +1,6 @@
 ﻿using System.Numerics;
 
-namespace AdventOfCode;
+namespace AdventOfCode.aOLD.D14;
 
 public class D14
 {

@@ -1,7 +1,7 @@
 ﻿using System.Numerics;
 using System.Text.RegularExpressions;
 
-namespace AdventOfCode;
+namespace AdventOfCode.aOLD.D14;
 
 public static class DataD14
 {
@@ -25,8 +25,8 @@ public static class DataD14
 
                     var pattern = @"p\=(.*)\,(.*) v\=(.*),(.*)";
                     var match = Regex.Match(line, pattern);
-                    robot.X =  int.Parse(match.Groups[1].Value);
-                    robot.Y =  int.Parse(match.Groups[2].Value);
+                    robot.X = int.Parse(match.Groups[1].Value);
+                    robot.Y = int.Parse(match.Groups[2].Value);
                     robot.Vx = int.Parse(match.Groups[3].Value);
                     robot.Vy = int.Parse(match.Groups[4].Value);
                     _robots.Add(robot);

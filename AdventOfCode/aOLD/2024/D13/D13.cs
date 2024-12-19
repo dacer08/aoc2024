@@ -1,6 +1,6 @@
 ﻿using System.Numerics;
 
-namespace AdventOfCode;
+namespace AdventOfCode.aOLD.D13;
 
 public class D13
 {
@@ -20,7 +20,7 @@ public class D13
             var bx2 = px - a * machine.Ax;
 
             if (nom % den == 0 && bx2 % machine.Bx == 0)
-                tokens += 3 * a + (bx2 / machine.Bx);
+                tokens += 3 * a + bx2 / machine.Bx;
         }
         Console.WriteLine(tokens);
     }

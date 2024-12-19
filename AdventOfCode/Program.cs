@@ -1,5 +1,6 @@
 ﻿using AdventOfCode;
 
-var d = new D14();
+var d = new D20();
 d.Run();
 
+    

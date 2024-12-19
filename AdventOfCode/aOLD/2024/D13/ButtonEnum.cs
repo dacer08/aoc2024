@@ -1,4 +1,4 @@
-﻿namespace AdventOfCode;
+﻿namespace AdventOfCode.D13.D13;
 
 public enum ButtonEnum
 {

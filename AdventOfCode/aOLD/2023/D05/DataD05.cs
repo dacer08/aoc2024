@@ -2,14 +2,14 @@
 
 public static class DataD05
 {
-    private const string INPUT = "aOLD/2023/D05/InputTest.txt";
-    //private const string INPUT = "D05/Input.txt";
+    //private const string INPUT = "aOLD/2023/D05/InputTest.txt";
+    private const string INPUT = "aOLD/2023/D05/Input.txt";
 
-    private static List<int> _seeds = [];
+    private static List<long> _seeds = [];
 
-    private static List<List<Rule>> _categories = [];
+    public static Dictionary<int, Rule[]> Categories = [];
 
-    public static List<int> Seeds
+    public static List<long> Seeds
     {
         get
         {
@@ -22,18 +22,18 @@ public static class DataD05
         }
     }
 
-    public static List<List<Rule>> Categories
-    {
-        get
-        {
-            if (_categories.Count == 0)
-            {
-                Read();
-            }
+    //public static Dictionary<int, Dictionary<int, Rule>> Categories
+    //{
+    //    get
+    //    {
+    //        if (_categories.Count == 0)
+    //        {
+    //            Read();
+    //        }
 
-            return _categories;
-        }
-    }
+    //        return _categories;
+    //    }
+    //}
 
     public static void Read()
     {
@@ -43,11 +43,11 @@ public static class DataD05
                 .Split(':')[1]
                 .Trim()
                 .Split(' ')
-                .Select(c => int.Parse(c))
+                .Select(c => long.Parse(c))
                 .ToList();
 
         var i = 3;
-
+        var j = 0;
         while (i < lines.Length)
         {
             var line = lines[i];
@@ -55,11 +55,11 @@ public static class DataD05
             while (i < lines.Length && lines[i] != "")
             {
                 line = lines[i];
-                var rule = line.Split(' ').Select(c => int.Parse(c)).ToList();
-                rules.Add(new Rule(rule[0], rule[1], rule[2]));
+                var rule = line.Split(' ').Select(c => long.Parse(c)).ToList();
+                rules.Add(new Rule(rule[0], rule[1], rule[2], rule[1]+ rule[2]));
                 i++;
             }
-            _categories.Add(rules);
+            Categories.Add(j++, rules.OrderBy(r => r.Destination).ToArray());
             i++;
             i++;
         }
