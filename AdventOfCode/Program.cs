@@ -1,6 +1,12 @@
 ﻿using AdventOfCode;
+using System.Diagnostics;
 
-var d = new D20();
+var watch = new Stopwatch();
+watch.Start();
+
+var d = new D22(watch);
 d.Run();
 
-    
+watch.Stop();
+Console.WriteLine("Time: " + watch.ElapsedMilliseconds.ToString() + " ms");
+
