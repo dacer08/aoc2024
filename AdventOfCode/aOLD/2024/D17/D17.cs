@@ -98,7 +98,7 @@ public class D17
         DataD17.Read();
 
         var needs = new List<long>() { 2, 4, 1, 3, 7, 5, 0, 3, 1, 5, 4, 4, 5, 5, 3, 0 };
-        var start = 16325865043552L << 3;
+        //var start = 16325865043552L << 3;
         needs = needs.Skip(0).ToList();
         var j = 0;
         while (j < 8)

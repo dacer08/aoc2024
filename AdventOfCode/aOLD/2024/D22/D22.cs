@@ -30,7 +30,7 @@ public class D22
     public void Run()
     {
         var starters = File.ReadAllLines(INPUT);
-        long res = 0;
+        //long res = 0;
         for (int monkey = 0; monkey < starters.Length; monkey++)
         {
             var dic = new Dictionary<int, ValueD22>();

@@ -1,6 +1,4 @@
-﻿using System.Numerics;
-
-namespace AdventOfCode;
+﻿namespace AdventOfCode;
 
 public class Vector2D : IComparable<Vector2D>
 {
@@ -44,12 +42,12 @@ public class Vector2D : IComparable<Vector2D>
         return X == item.X && Y == item.Y;
     }
 
-    public static bool operator ==(Vector2D a, Vector2D b)
+    public static bool operator ==(Vector2D? a, Vector2D? b)
     {
         return Equals(a, b);
     }
 
-    public static bool operator !=(Vector2D a, Vector2D b)
+    public static bool operator !=(Vector2D? a, Vector2D? b)
     {
         return !Equals(a, b);
     }
