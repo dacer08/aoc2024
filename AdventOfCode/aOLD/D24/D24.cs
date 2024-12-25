@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Text;
 
-namespace AdventOfCode.Current.D24;
+namespace AdventOfCode.aOLD.D24;
 
 public class D24
 {
@@ -50,13 +50,11 @@ public class D24
 
         i++;
 
-        var j = 0;
         while (i < file.Length)
         {
             var split = file[i].Split(' ');
-            Operations.Add(new(split[0], split[2], split[1], split[4], j));
+            Operations.Add(new(split[0], split[2], split[1], split[4]));
             i++;
-            j++;
         }
 
         //var remaining = 0;
@@ -148,13 +146,11 @@ public class D24
 
         i++;
 
-        var j = 0;
         while (i < file.Length)
         {
             var split = file[i].Split(' ');
-            Operations.Add(new(split[0], split[2], split[1], split[4], j++));
+            Operations.Add(new(split[0], split[2], split[1], split[4]));
             i++;
-            j++;
         }
     }
 
@@ -175,10 +171,10 @@ public class D24
                 if (n1 > n2) current = new CombinationD24(n2, n1);
                 else current = new CombinationD24(n1, n2);
 
-                if (operations.All(o => o.Index != n1 && o.Index != n2))
-                {
-                    Errors.Add(current);
-                }
+                //if (operations.All(o => o.Index != n1 && o.Index != n2))
+                //{
+                //    Errors.Add(current);
+                //}
             }
 
         }
@@ -264,26 +260,25 @@ public class D24
 
         var x = ConvertToNumber('x');
         var y = ConvertToNumber('y');
-        var expected = x & y;
+        // bvw,cng,csw,fhk,gkc,gww,hbh,hbw,htn,hvc,jhg,jqf,jvf,kbb,mdd,nnn,prp,rck,rjs,rvm,rvn,sbt,skh,tvf,vqf,wkb,wmq,wpd,wpd,wpp,wts,wwp,z01,z11,z15,z19,z37
+        var expected = x + y;
         Console.WriteLine($"Expected: {expected}");
-        var index = Enumerable.Range(0, MAX).ToList();
-        var combination = index;
-        var res = -1;
-        var p = 0;
-        while (res != expected && combination[0] < Operations.Count)
+        var combination = new List<int> { 19, 187, 165, 206, 44, 50, 133, 177 };
+        var res = 0;
+        //while (res != expected && combination[0] < Operations.Count)
         {
-            if (p % 1000 == 0)
-            {
-                Console.WriteLine($"Current: {p} => {string.Join(",", combination)}");
-            }
-            p++;
+            //if (p % 1000 == 0)
+            //{
+            //    Console.WriteLine($"Current: {p} => {string.Join(",", combination)}");
+            //}
+            //p++;
             var operations = new List<OperationsD24>(Operations);
             for (var i = 0; i < combination.Count; i++)
             {
                 var a = operations[combination[i++]];
                 var b = operations[combination[i]];
-                operations.Add(new(a.Left, a.Right, a.Operand, b.Destination, a.Index));
-                operations.Add(new(b.Left, b.Right, b.Operand, a.Destination, b.Index));
+                operations.Add(new(a.Left, a.Right, a.Operand, b.Destination));
+                operations.Add(new(b.Left, b.Right, b.Operand, a.Destination));
             }
 
             operations = operations.Where((a, b) => !combination.Contains(b)).ToList();
@@ -324,9 +319,9 @@ public class D24
             if (expected == ConvertToNumber('z'))
             {
                 Console.WriteLine($"Result: {string.Join(",", combination)}");
-                break;
+                //break;
             }
-            combination = GetNextCombination(operations, combination);
+            //combination = GetNextCombination(operations, combination);
         }
     }
 
