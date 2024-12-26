@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Text;
 
-namespace AdventOfCode.Current.D21;
+namespace AdventOfCode.aOLD.D21;
 
 public class D21
 {
@@ -22,13 +22,6 @@ public class D21
     private static char[] NUMBERS = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9'];
     //private const string INPUT = "D21/Input.txt";
 
-    /*
-        149A
-        582A
-        540A
-        246A
-        805A
-     * */
 
     /*
 +---+---+---+

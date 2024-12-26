@@ -9,7 +9,6 @@
 
   <ItemGroup>
     <PackageReference Include="Dijkstra.NET" Version="1.2.1" />
-    <PackageReference Include="Microsoft.Z3" Version="4.12.2" />
   </ItemGroup>
 
   <ItemGroup>
@@ -151,6 +150,12 @@
     <None Update="aOLD\2024\D23\InputTest.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
+    <None Update="Current\D20\ScoresFromEnd.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="Current\D20\ScoresFromStart.txt">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
     <None Update="Pending\D25\Input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
@@ -166,16 +171,16 @@
     <None Update="InputTest.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Current\D21\Input.txt">
+    <None Update="aOLD\D21\Input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Current\D21\InputTest.txt">
+    <None Update="aOLD\D21\InputTest.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Pending\D20\Input.txt">
+    <None Update="Current\D20\Input.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
-    <None Update="Pending\D20\InputTest.txt">
+    <None Update="Current\D20\InputTest.txt">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Update="aOLD\2024\D19\Input.txt">
